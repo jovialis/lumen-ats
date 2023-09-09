@@ -86,3 +86,15 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Firebase files
+.firebase/
+
+# Yarn v2
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

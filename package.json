@@ -1,0 +1,19 @@
+{
+  "name": "lumen-ats",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Dylan Hanson",
+    "email": "cdh.create@gmail.com"
+  },
+  "scripts": {
+    "dev": "yarn workspace functions run build:watch && yarn run firebase:emulators",
+    "firebase:emulators": "firebase emulators:start --only functions,hosting --import=./.emulatorState --export-on-exit",
+    "firebase:kill": "lsof -t -i:5005 -i:8080 -i:9000 -i:5002 -i:9099 -i:8085 -i:9299 | xargs kill -9"
+  },
+  "workspaces": [
+    "functions",
+    "hosting"
+  ],
+  "packageManager": "yarn@3.6.3"
+}
