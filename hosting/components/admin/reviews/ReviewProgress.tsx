@@ -109,7 +109,7 @@ function ReviewProgressView() {
 
 				{data && <HStack justifyContent={"stretch"} mt={2}>
                     <Progress
-                        value={data.completedApplicants.length / data.totalCount}
+                        value={(data.completedApplicants.length / data.totalCount) * 100}
                         flex={1}
                         colorScheme={"green"}
                     />

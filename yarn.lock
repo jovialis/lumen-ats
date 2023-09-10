@@ -4959,9 +4959,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lumenats@workspace:.":
+"lumen-ats@workspace:.":
   version: 0.0.0-use.local
-  resolution: "lumenats@workspace:."
+  resolution: "lumen-ats@workspace:."
   languageName: unknown
   linkType: soft
 
