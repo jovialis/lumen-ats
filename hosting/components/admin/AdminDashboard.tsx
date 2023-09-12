@@ -27,7 +27,7 @@ export function AdminDashboard() {
 				{installation.applicationName}
 			</Text>
 
-			<Tabs isLazy={true}>
+			<Tabs isLazy={true} lazyBehavior={"keepMounted"}>
 				<TabList>
 					<Tab>
 						Add Users
